@@ -1,102 +1,130 @@
-<html> 
-    <head> 
-        <title>About Me</title> 
-        </head> 
-        <style> 
+<html>
+<head>
+    <title>About Me</title>
+    <style>
         
-        body 
-        { 
-            background-image: url(images/wallpaper.jpg) 
-  
-        } 
-        </style>  
- 
-       <head>
-       <meta name="viewport" content="width=device-width, initial-scale=1">
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(images/wallpaper.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            color: #333;
+        }
 
-   <style>
-   body {
-     margin: 0;
-     font-family: Arial, Helvetica, sans-serif;
-   }
-       
-       .topnav {
-         overflow: hidden;
-         background-color: #333;
-       }
-    
-       .topnav a {
-         float: left;
-         color: #f2f2f2;
-         text-align: center;
-         padding: 14px 16px;
-         text-decoration: none;
-         font-size: 17px;
-       }
-       
-       .topnav a:hover {
-         background-color: #ddd;
-         color: black;
-       }
-       
-       .topnav a.active {
-         background-color: #632660;
-         color: white;
-       }
-       </style>
-       </head>
-       <body>
-       
-       <div class="topnav">
-        <a class="active" href="main_page.html">Home</a>
-        <a href="biodata.html" target="_self" >About me</a>
-        <a href="my_family.html" target="_self" >My Family</a>
-        <a href="my_hobby.html" target="_self" >My Hobby</a>
-        <a href="gallery.html" target="_self" >My Gallery</a>
-        <a href="education.html" target="_self" >My education</a>
-        <a href="5_favourite_movie_to_watch.html" target="_self" >Favourite movie need to watch</a>
-        <a href="link.html" target="_self" >Link</a>
-       </div>
-       
-       </body>
-            <h1 align="center"><strong>HI, ATHIRAH HERE!</strong> </h1>  
-            <br>
-            <h2 align="center"><strong>I am Information Management Student </strong> </h2>
-            <p> 
-                <div align ="center">  
-                <h4 style="text-align:justify;"></h4> 
-                <a href="images/Collage1.jpg">  
-                <img src="images/Collage1.jpg" height="200" style="float:center;" border=""hspace ="20" vspace="4"> 
-                <a href="images/button (2).png">  
-                    <img src="images/Collage2.jpg" height="200" style="float:center;" border="" hspace ="20" 
-                    vspace="10">
-                <a href="images/Collage3.jpg">  
-                    <img src="images/Collage3.jpg" height="200" style="float:center;" border="" hspace ="20" 
-                    vspace="10">
-                </a> 
-                <hr size ="5" color ="#17202a" width="90%"> 
- 
-                <br> 
-                 
-                <font size="3" color="#17202a" face="arial"> <strong> ────୨ATHIRAH BINTI ABD HAMIDৎ──── </strong></font> 
-                </p>   
- 
-                <p>
-                    <!--using image as hyperlink, local link-->
-                    <a href="biodata.html"><img src="images/button (1).png"></a>
-                    
-                    <a href="my_family.html"><img src="images/button (2).png"></a>
-                    
-                    <a href="my_hobby.html"><img src="images/button (2).png"></a>
-                   
-                    <a href="link.html"><img src="images/button (3).png"></a>
-                    <br>
-                    <!--Using image as hyperlink, global link-->
-                    <a href="https://www.instagram.com/athrh_._._/"><img src="images/instagram.jpg" width="40px"></a>
-                    <a href="https://x.com/ohunniee_"><img src="images/logo twitter.png" width="60px"></a>
-                    <a href="mailto:thirah.hamid04@gmail.com"><img src="images/maillogo.png" width="40px"></a>
-                
-                </p> 
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+            padding: 0;
+        }
+
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #632660;
+            color: white;
+        }
+
         
-        </body> 
+        .img-box {
+            display: block;
+            margin: 50px auto; 
+            width: 200px;
+            height: 200px;
+            overflow: hidden; 
+            border-radius: 50%; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Centered text styling */
+        .content {
+            text-align: center;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+
+        .content h1 {
+            font-size: 36px;
+            color: #632660;
+        }
+
+        .content p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="topnav">
+        <a class="active" href="main_page.html">Home</a>
+        <a href="biodata.html" target="_self">About Me</a>
+        <a href="my_family.html" target="_self">My Family</a>
+        <a href="my_hobby.html" target="_self">My Hobby</a>
+        <a href="gallery.html" target="_self">My Gallery</a>
+        <a href="education.html" target="_self">My Education</a>
+        <a href="5_favourite_movie_to_watch.html" target="_self">Favourite Movies</a>
+        <a href="link.html" target="_self">Links</a>
+    </div>
+
+    <div class="img-box">
+        <img src="images/ME 2.jpg" alt="Profile Picture">
+    </div>
+
+    <div align="center">
+        <h1>Hi, Athirah Here!</h1>
+        <p>I am an Information Management Student. Welcome to my personal page where I share my interests, hobbies, and more about myself.</p>
+    </div>
+
+    <p> 
+      <div align ="center">  
+      <hr size ="5" color ="#17202a" width="90%"> 
+
+      <br> 
+       
+      <font size="3" color="#17202a" face="arial"> <strong> ────୨ATHIRAH BINTI ABD HAMIDৎ──── </strong></font> 
+      <br>
+      <font size="3" color="#17202a" face="arial"> <strong> HERE IS THE CONTENT FROM MY WEBSITE! . SO, LET'S START TO EXPLORE, ENJOY </strong></font> 
+      </p>   
+
+      <p>
+          <!--using image as hyperlink, local link-->
+          <a href="biodata.html"><img src="images/button (1).png"></a>
+          
+          <a href="my_family.html"><img src="images/button (2).png"></a>
+          
+          <a href="my_hobby.html"><img src="images/button (2).png"></a>
+         
+          <a href="link.html"><img src="images/button (3).png"></a>
+          <br>
+          <!--Using image as hyperlink, global link-->
+          <a href="https://www.instagram.com/athrh_._._/"><img src="images/instagram.jpg" width="40px"></a>
+          <a href="https://x.com/ohunniee_"><img src="images/logo twitter.png" width="60px"></a>
+          <a href="mailto:thirah.hamid04@gmail.com"><img src="images/maillogo.png" width="40px"></a>
+      
+      </p> 
+
+      <p>
+      <a href="https://www.instagram.com/athrh_._._/" accesskey="1">INSTAGRAM</a> (ALT1)
+      </p>
+</body>
 </html>
