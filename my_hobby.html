@@ -1,96 +1,233 @@
 <html>
-    <head>
-        <title>My hobby</title>
-    </head>
+<head>
+    <title>My Hobby</title>
     <style>
-        body
-        {
-            background-image: url(images/wallpaper\ hobi.jpg)
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(images/wallpaper\ hobi.jpg);
+            background-size: cover;
+            margin: 0;
+            color: #0a0a0a;
+            line-height: 1.6;
+        }
+
+        h1, h4 {
+            color: #336691;
+        }
+
+        hr {
+            border: 0;
+            height: 5px;
+            background-color: #060607;
+            margin: 20px 0;
+        }
+
+        /* Navigation Bar */
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 16px 20px;
+            text-decoration: none;
+            font-size: 17px;
+            transition: background-color 0.3s ease;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #7bccc8;
+            color: white;
+        }
+
+        .content {
+            display: flex; /* Aligns the children side by side */
+            align-items: center; /* Vertically aligns content */
+            justify-content: center; /* Centers the content */
+            gap: 5px; /* Space between the items */
+        }
+
+        .image-box {
+            flex: 1; /* Allows the image to take up available space */
+        }
+
+        .image-box img {
+            width: 150px; /* Sets the image width */
+            height: 150px; /* Sets the image height */
+            object-fit: cover; /* Ensures the image is properly scaled */
+            border-radius: 50%; /* Makes the image circular */
+            border: 5px solid #ddd; /* Circular border around the image */
+        }s
+
+        .hobby-text {
+            flex: 2; /* Gives the text section more space */
+            max-width: 800px; /* Optional: limits the max width of the text */
+        }
+
+        .hobby-text p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .video-container video {
+            border: 5px solid #54595e;
+            border-radius: 10px;
+        }
+
+
+        /* Footer or End Section */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
         }
     </style>
-    <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-    
-    .topnav {
-      overflow: hidden;
-      background-color: #333;
-    }
-    
-    .topnav a {
-      float: left;
-      color: #f2f2f2;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-    }
-    
-    .topnav a:hover {
-      background-color: #ddd;
-      color: black;
-    }
-    
-    .topnav a.active {
-      background-color: #336691;
-      color: white;
-    }
-    </style>
-    </head>
-    <body>
-    
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
     <div class="topnav">
-      <a class="active" href="main_page.html">Home</a>
-      <a href="biodata.html" target="_self" >About me</a>
-      <a href="my_family.html" target="_self" >My Family</a>
-      <a href="my_hobby.html" target="_self" >My Hobby</a>
-      <a href="gallery.html" target="_self" >My Gallery</a>
-      <a href="education.html" target="_self" >My education</a>
-      <a href="5_favourite_movie_to_watch.html" target="_self" >Favourite movie need to watch</a>
-      <a href="link.html" target="_self" >Link</a>
+        <a class="active" href="main_page.html">Home</a>
+        <a href="biodata.html">About me</a>
+        <a href="my_family.html">My Family</a>
+        <a href="my_hobby.html">My Hobby</a>
+        <a href="gallery.html">My Gallery</a>
+        <a href="education.html">My Education</a>
+        <a href="5_favourite_movie_to_watch.html">Favourite Movies</a>
+        <a href="link.html">Links</a>
     </div>
-    
-    </body>
-    </style>
-    <body>
 
-        <h1 align="center">My hobby</h1>
-        <hr size="5" color="black" width="90%">
-        <div align="center">
-            <a href="images/bicycle.jpg" >
-            <img src="images/bicycle.jpg"
-            height="200" class="w3-circle" border="5" hspace="10"
-            vspace="10"> </a>
-            <br>
-          In my free time, my favorite activity is cycling. I really like cycling because riding a bike increases my stamina.
-          By cycling I can see the green plants around me. I can discover and explore the beauty of flora and fauna in Malaysia.
-          The place I often cycle is in Putrajaya. Putrajaya is a place with less traffic compared to Kuala Lumpur, and
-          the beauty of the plants there is also well maintained.
+    <div class="content">
+      <font size="8" color="#17202a" face="Georgia"> <strong> ────୨MY HOBBYৎ──── </strong></font> 
+    </div>
+
+    <hr>
+    <div class="content">
+        <div class="image-box">
+            <a href="images/photograph2.jpg">
+                <img src="images/photograph2.jpg" alt="Photograph">
+            </a>
+        </div>
+
+        <div class="hobby-text">
+            <p>
+                My favourite hobby is taking pictures. I like to keep cameras to use as a camera collection and taking pictures.
+                This hobby was inspired by my father, Abd Hamid, who has a variety of camera and video camera collections.
+                Every time we go on vacation, he will record us. So, when the time comes, we can see the memories that we have made.
+            </p>
+        </div>
+    </div>
+
+    <hr>
+    <br clear="all">
+
+    <div class="content">
+      <div class="image-box"> 
+          <a href="images/se fish.jpg">
+            <img src="images/se fish.jpg">
+          </a>
+      </div>
+     
+      <div class="hobby-text">
+        <p>
+            My family and I love raising fish, and we have several aquariums and a fish pond at home. I cherish the memory of my fish named Se, which I raised for three years.
+            Unfortunately, I cannot raise furry animals due to eczema, but I find joy in taking care of aquatic pets like fish and turtles.
+            Ada cerita disebalik nama "Se", dimana saya menamakan se bagi menunjukkan seekor jadi memudahkan saya untuk menamakan ikan saya dengan Se.
+            This is the longest fish I have kept. The routine I always do is every 2 weeks, I will clean the aquarium.
+            Feed every morning and night.I was very sad when I found out he was gone because this fish was very special to me.
+        </p>
+         </div>
+        </div>
+        <br clear="all">
+
+        <hr>
+
+        <div class="content">
+            <div class="image-box"> 
+                <a href="images/bicycle.jpg">
+                  <img src="images/bicycle.jpg">
+                </a>
             </div>
-        <hr size="5" color="black" width="90%">
-        <h4 style="text-align: justify;" >
-          <div align="center">
-            <img src="images/chess.jpg" height="200" border="5" hspace="10"
-            style="float:center;">
-            <br>
-            There are many activities that I like to do to pass the time doing hobbies. When I have free time, I like to spend time on drawing. I really like drawing since I was little. For me, drawing is very fun because it is related to colors. It makes me interested in drawing. Of course, I prefer to draw and color on a canvas board because I will hang it on the wall.
-            Next, a fun fact for me is that I am someone who likes to play chess. There are a lot of chess at home because I like to play. But among my six siblings, only one likes to play chess. During Form 2, I once joined a chess club. Not only that, I also like to play chess via phone or computer by downloading chess games.
-      
-        </h4>
+           
+            <div class="hobby-text">
+              <p>
+                In my free time, my favorite activity is cycling. I really enjoy cycling because riding a bike increases my stamina. Cycling allows me to explore 
+                the green surroundings and the beauty of nature. The place I often cycle is in Putrajaya, which has less traffic compared to Kuala Lumpur, and the flora there is well-maintained.
+              </p>
+               </div>
+              </div>
+              <br clear="all">
+      <hr>
 
-        <hr size="5" color="black" width="90%">
+      <div class="content">
+        <div class="image-box"> 
+            <a href="images/INDONESIA.jpg">
+              <img src="images/INDONESIA.jpg">
+            </a>
+        </div>
+       
+        <div class="hobby-text">
+          <p>
+            Travel is what I like the most. This travel allows us to learn to get to know the culture regardless of whether it is in Malaysia or outside Malaysia.
+            An experience that I will never forget is traveling with my partner and going out with my family. A very beautiful memory! From the experience
+            this makes me excited to travel within Malaysia and outside Malaysia to explore the beauty of flora and fauna on this earth.
+            Among the foreign countries I've been to is traveling in Indonesia. I can feel how the roads are congested on the highway
+            Indonesia. Very compact! Unique culture, beautiful shopping places and very tasty food. I like nasi padang
+            Indonesia. Then, Universal Studio Singapore. I was able to play various theme parks there. Very best.
+          </p>
+           </div>
+          </div>
+          <br clear="all">
+          <hr>
 
-        <div align="center">
-        <video width="400" controls> 
-          <source src="video/cassete.mp4" type="video/mp4"> 
-          <source src="video/cassete.mp4" type="video/ogg"> 
-          Your browser does not support HTML video. 
-        </video> 
-      </div> 
+        <div class="content">
+        <div class="image-box">
+            <a href="images/chess.jpg">
+            <img src="images/chess.jpg">
+        </a>
+        </div>
+        <div class="hobby-text">
+            <p>
+                Chess is an activity that is also my hobby. When I was a child I always played with my father and uncle.
+                I used to join a chess club because I like playing chess. By joining this chess club
+                I can master the skill of playing chess.
+            </p>
+        </div>
+    </div>
 
-    </body>
+    <hr>
+
+    <div class="content">
+        <div class="image-box">
+            <img src="images/videocassete.gif">
+        </a>
+        </div>
+    <div class="hobby-text">
+      <p>
+        Next, listening to music is also one of my hobbies and usually I will on the songs while doing housework, cleaning, vacuuming and more.
+        In addition, listening to music is one of the good therapies because it can relieve stress. I prefer to listen to music in the genres of pop, jazz, R&B and dance pop. 
+        I started to like listening to music since my father took me and my family to cafes and held mini concerts. 
+        Moreover, I started to like kpop which is a genre of pop music since I heard and saw music videos from girls' generation snsd.
+      </p>
+  
+</body>
+
 </html>

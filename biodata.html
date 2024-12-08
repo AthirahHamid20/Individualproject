@@ -10,7 +10,7 @@
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
-            background-image: url(images/newwallpaper4.jpg);
+            background-image: url(images/wallpapervid.gif);
             background-size: cover;
             background-attachment: fit;
             color: #333;
@@ -71,13 +71,14 @@
         }
 
         .kotak {
-            background-color: #fff;
-            padding: 20px;
-            margin: 20px 0;
-            border: 3px solid #632660;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background-color: #cdc7e4;
+            padding: 10px;
+            margin: 10px 0;
+            border: 5px solid #632660;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(243, 239, 239, 0.2);
             text-align: center;
+            box-sizing: border-box;
         }
 
         .kotak h1 {
@@ -85,6 +86,7 @@
             color: #632660;
             margin-bottom: 10px;
         }
+
 
         .kotak h4 {
             font-size: 16px;
@@ -115,8 +117,65 @@
         a:hover {
             text-decoration: underline;
         }
+
+        .date-time {
+            text-align: center;
+            font-size: 1.5em;
+            color: #fff;
+            margin: 20px 0;
+        }
+
+        /* Reka bentuk asas untuk jadual */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: #333;
+
+        }
+
+        /* Gaya untuk tajuk jadual */
+        th {
+         background-color: #3e3779;
+        color: white;
+         padding: 12px;
+         text-align: center;
+         font-size: 14px;
+        
+        }
+
+        /* Gaya untuk sel */
+        td {
+         padding: 10px;
+            border-bottom: 1px solid #DDD;
+            }
+
+        /* Keseluruhan baris ketika hover */
+        tr:hover {
+         background-color: #cbc7cc;
+        cursor: pointer;
+        }
+
+        /* Menyelaraskan baris teks */
+        tr {
+        text-align: center;
+        }
+
+        /* Tajuk jadual */
+        h2 {
+         font-family: 'Arial', sans-serif;
+        color: #070606;
+         margin-bottom: 10px;
+        }
+
+        p {
+         font-size: 15px;
+        color: #555;
+        }
     </style>
 </head>
+
 <body>
 
     <div class="topnav">
@@ -133,17 +192,30 @@
     <div class="container">
         <h1>⋆.˚🦋༘⋆WELCOME TO ATHIRAHIMNIDA WEBSITE⋆.˚🦋༘⋆</h1>
         <hr size="5" color="black">
-
-        <div class="image-gallery" align="center">
-          <img src="images/ME.jpg" alt="Athirah Photo 1" height="200" style="border-radius: 50%; border: 5px solid #632660; width: 200px; height: 200px; object-fit: cover;">
-          <img src="images/ME 2.jpg" alt="Athirah Photo 2" height="200" style="border-radius: 50%; border: 5px solid #632660; width: 200px; height: 200px; object-fit: cover;">
-          
         
-    <p id="demo"></p>
-      <script>
-      const d = new Date("2024-12-07");
-      document.getElementById("demo").innerHTML = d;
-      </script>
+        <div class="image-gallery" align="center">
+        <a href="images/saya1.jpg">
+          <img src="images/saya1.jpg" alt="Athirah Photo 1" height="200" style="border-radius: 50%; border: 5px solid #632660; width: 200px; height: 200px; object-fit: cover;">
+        </a>
+
+        <a href="images/saya2.jpg">
+        <img src="images/saya2.jpg" alt="Athirah Photo 2" height="200" style="border-radius: 50%; border: 5px solid #632660; width: 200px; height: 200px; object-fit: cover;">
+        </a>
+        
+        <a href="images/saya&petronas.jpg"></a>
+        <img src="images/saya&petronas.jpg" alt="Athirah Photo 2" height="200" style="border-radius: 50%; border: 5px solid #632660; width: 200px; height: 200px; object-fit: cover;">
+        </a>
+        
+        <div class="date-time" id="dateTime"></div>
+          <script>
+            function updateDateTime() {
+                const now = new Date();
+                const dateTimeElement = document.getElementById('dateTime');
+                dateTimeElement.innerText = now.toLocaleString(); // Display date and time in locale format
+            }
+            setInterval(updateDateTime, 1000); // Update every second
+            updateDateTime(); // Initial call to set the time immediately
+        </script>
 
         </div>
         <hr size="5" color="black">
@@ -201,26 +273,61 @@
 
             <br clear="all">
 
+            <hr size ="5" color ="#17202a" width="90%"> 
+
         <div>
           <div class="kotak">
-            <div class="text">
-          <h2>My Bucket List? :WHAT I WANT TO ACHIEVE??</h2>
-
+          <div class="text">
           <div style="display: flex; align-items: center; justify-content: center;">
           
-            <div class="kotak" style="margin-right: 20px;">
+            <div class="kotak" style="margin-right: 50px;">
+                <h2>My Bucket List?‧₊˚ ☁️⋅♡🪐༘⋆</h2>
                 <ul style="list-style-image: url(images/lovebullet.png);">
                   <li>I want to do umrah with all my family</li>
                   <li>Would like to explore Edinburgh</li>
                   <li>To have my own aesthetic cafe</li>
+                  <li>I want to do umrah with all my family</li>
+                  <li>Would like to explore Edinburgh</li>
+                 
                 </ul>
             </div>
             
             <div>
-              <img src="images/ME 2.jpg" alt="A relevant photo" style="width: 200px; height: auto; border-radius: 10px;">
-              </div>
+            <div class="kotak">
+              <h2>🥇🥈🏅My Achievement🥇🥈🏅</h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th>LIST:</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>3RD PLACE FOR FASTEST TIME</td>
+                      </tr>
+                  <tr>
+                    <td>Second place in the co-curricular choral speaking competition</td>
+                  </tr>
+                  <tr>
+                    <td>Second place traditional games</td>
+                  </tr>
+                  <tr>
+                    <td>Best librarian award</td>
+                  </tr>
+                 
+                </tbody>
+              </table>
+              
             </div>
             </div>
+            </div>
+            </div>
+        </div>
+
+        <hr>
+        <div class="kotak" style="margin-right: 20px;">
+        <h1>My Top Playlist</h1>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/76yef5hYaQvXDzNwMBaWsZ?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
 
         <div class="kotak">
