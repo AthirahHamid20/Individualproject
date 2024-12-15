@@ -5,11 +5,10 @@
     <style>
         body
         {
-            background-image: url(images/wallpaper\ 1.jpg)
+            background-image: url(images/moviewallpaper4.jpg)
         }
     </style>
     <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {
   margin: 0;
@@ -39,43 +38,194 @@ body {
       background-color: #336691;
       color: white;
     }
+
+    .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #f54949;
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            margin-top: 40px;
+        }
+
+        hr {
+            width: 90%;
+            border: 2px solid #fff;
+            margin: 20px auto;
+        }
+
+        .movie-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px;
+        }
+
+        .movie-item {
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            margin: 15px;
+            width: 300px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+            overflow: hidden;
+        }
+
+        .movie-item:hover {
+            transform: scale(1.05);
+        }
+
+        .movie-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .movie-item h2 {
+            text-align: center;
+            font-size: 24px;
+            color: #ff5722;
+            margin: 10px;
+        }
+
+        .movie-item p {
+            font-size: 16px;
+            text-align: justify;
+            padding: 0 15px;
+            color: #ddd;
+        }
+
+        .movie-item .recommendation {
+            text-align: center;
+            background-color: #ff5722;
+            padding: 10px;
+            color: #fff;
+            font-weight: bold;
+        }
+
+  
+        @media (max-width: 768px){
+            .movie-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .movie-item {
+                width: 80%;
+            }
+          }
+
+          .kotak ul {
+      color: white;
+    }
+
     </style>
     </head>
     <body>
     
     <div class="topnav">
-      <a class="active" href="main_page.html">Home</a>
-      <a href="biodata.html" target="_self" >About me</a>
-      <a href="my_family.html" target="_self" >My Family</a>
-      <a href="my_hobby.html" target="_self" >My Hobby</a>
-      <a href="gallery.html" target="_self" >My Gallery</a>
-      <a href="education.html" target="_self" >My education</a>
-      <a href="5_favourite_movie_to_watch.html" target="_self" >Favourite movie need to watch</a>
-      <a href="link.html" target="_self" >Link</a>
+       
+            <a class="active" href="index.html">Home</a>
+            <a href="biodata.html">About Me</a>
+            <a href="my_family.html">My Family</a>
+            <a href="my_hobby.html">My Hobby</a>
+            <a href="gallery.html">My Gallery</a>
+            <a href="education.html">My Education</a>
+            <a href="5_favourite_movie_to_watch.html">Favourite Movies</a>
+            <a href="link.html">Links</a>
     </div>
     
     </body>
     </style>
     <body>
 
-        <h1 align="center">My hobby</h1>
-        <hr size="5" color="black" width="90%">
+      <h1><font color="white" face="baguet script"> <strong> MY FAVOURITE MOVIE </strong> </font> </h1>
+      <hr>
+      
+      <div class="movie-container">
+      
+          <!-- Movie 1-->
+          <div class="movie-item">
+              <img src="images/onepiece.jpg" alt="One Piece">
+              <h2>One Piece</h2>
+              <p>
+                  One Piece is one of my all-time favorite movies. It's a captivating story of pirates, adventures, and a deep sense of friendship. If you haven't watched it yet, I highly recommend it!
+              </p>
+             
+              <div class="kotak" style="margin-right: 20px;">
+              <ul style="list-style-position: inside;">
+              <li><strong>THE MAIN CHARACTER</strong> : 
+      
+              <dt>INAKI GODOY AS</dt>
+                  <dd>Monkey D. Luffy</dd>
+              <dt>MACKENYU MAEDA ARATA AS</dt>
+                  <dd>Rorona zoro</dd>
+              <dt>EMILY ELLEN RUDD AS</dt>
+                  <dd>Nami</dd>
+              <dt>JACOB ROMERO</dt>
+                  <dd>Ussop</dd>
+              <dt>TAZ SKYLAR AS</dt>
+                  <dd>Sanji</dd>
+              
+                </li>
 
-        <h4 style="text-align: justify;" >
-            <img src="images/onepiece.jpg" height="200" border="5" hspace="10"
-            style="float: left;">
-            <h1>One Piece</h1>
-            Buat masa ini, one piece adalah movie yang saya minat
-            I would recommend to watch this movie.
-        </h4>
-<br clear="all">
-<h4 style="text-align: justify;" >
-    <img src="images/images.jpg" height="200" border="5" hspace="10"
-    style="float: right;">
-    <h1>Harry Potter</h1>
-    Buat masa ini, one piece adalah movie yang saya minat
-    I would recommend to watch this movie.
-</h4>
+              </ul>
+              </div>
+
+
+              <div class="recommendation">I recommend watching this movie!</div>
+          </div>
+      
+          <!-- Movie 2 -->
+          <div class="movie-item">
+              <img src="images/images.jpg" alt="Harry Potter">
+              <h2>Harry Potter</h2>
+              <p>
+                  The Harry Potter series holds a special place in my heart. It's a magical journey that brings fantasy to life. If you enjoy magic, adventure, and friendship, this movie is a must-watch!
+              </p>
+              <div class="recommendation">Highly Recommended!</div>
+          </div>
+      
+          <!-- Movie 3 -->
+          <div class="movie-item">
+                <a href="https://youtu.be/pnkgw6pAKkM?si=ZtRXfVk7WQaZwq4t" target="_blank">
+                <img src="images/moviebeautyandthebeast.jpg" alt="Beauty and the Beast">
+                </a>
+            <h2>Beauty and the Beast</h2>
+            <p>
+                The Harry Potter series holds a special place in my heart. It's a magical journey that brings fantasy to life. If you enjoy magic, adventure, and friendship, this movie is a must-watch!
+            </p>
+            <div class="recommendation">Highly Recommended!</div>
+        </div>
+
+        <!-- Movie 4 -->
+        <div class="movie-item">
+          <img src="images/moviethenarnia.jpg" alt="The Chronicles of Narnia:Prince Caspian">
+          <h2>The Chronicles of Narnia:Prince Caspian</h2>
+          <p>
+              The Harry Potter series holds a special place in my heart. It's a magical journey that brings fantasy to life. If you enjoy magic, adventure, and friendship, this movie is a must-watch!
+          </p>
+          <div class="recommendation">Highly Recommended!</div>
+      </div>
+
+      <!-- Movie 5-->
+      <div class="movie-item">
+        <img src="images/When_the_Phone_Rings_poster.png" alt="When the phone rings">
+        <h2>When the phone rings</h2>
+        <p>
+            The Harry Potter series holds a special place in my heart. It's a magical journey that brings fantasy to life. If you enjoy magic, adventure, and friendship, this movie is a must-watch!
+        </p>
+        <div class="recommendation">Current watching!</div>
+    </div>
+
+      </div>
      
 
     </body>
