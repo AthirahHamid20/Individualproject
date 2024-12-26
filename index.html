@@ -29,7 +29,6 @@
             object-fit: cover;
         }
 
-        /* Centered text styling */
         .content {
             text-align: center;
             margin: 20px auto;
@@ -43,7 +42,14 @@
 
         .content p {
             font-size: 18px;
-            line-height: 1.6;
+            line-height: 2;
+        }
+
+        .date-time {
+            text-align: center;
+            font-size: 1.5em;
+            color: #110e0e;
+            margin: 20px 0;
         }
     </style>
 </head>
@@ -58,6 +64,17 @@
         <h1>Hi, Athirah Here!</h1>
         <p>I am an Information Management Student. Welcome to my personal page where I share my interests, hobbies, and more about myself.</p>
     </div>
+
+    <div class="date-time" id="dateTime"></div>
+          <script>
+            function updateDateTime() {
+                const now = new Date();
+                const dateTimeElement = document.getElementById('dateTime');
+                dateTimeElement.innerText = now.toLocaleString(); // Display date and time in locale format
+            }
+            setInterval(updateDateTime, 1000); // Update every second
+            updateDateTime(); // Initial call to set the time immediately
+        </script>
 
     <p> 
       <div align ="center">  
